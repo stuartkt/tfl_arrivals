@@ -27,4 +27,4 @@
               = train['destinationName']
             td
               .text-primary
-                = t('arrivals.table.time_to_station', count: (train['timeToStation'] / 60.0).ceil)
+                = t('arrivals.table.time_to_station', count: (train['timeToStation'] / 60.0).floor)

@@ -5,7 +5,7 @@ class ArrivalsController < ApplicationController
     @arrivals = fetch_arrivals
     respond_to do |format|
       format.html
-      format.turbo_stream { render :index }
+      format.turbo_stream
     end
   end
 
