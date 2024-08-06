@@ -1,0 +1,15 @@
+---
+en:
+  arrivals:
+    platform: Platform %{platform}
+    table:
+      heading:
+        arrival: Arrival
+        current_location: Current location
+        destination: Destination
+        line: Line
+      time_to_station:
+        one: 1 Minute
+        other: "%{count} minutes"
+        zero: Due
+    title: Next Trains at Great Portland Street

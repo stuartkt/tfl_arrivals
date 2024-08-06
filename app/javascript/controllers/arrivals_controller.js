@@ -7,11 +7,10 @@ export default class extends Controller {
         this.startRefreshing()
     }
 
-
     startRefreshing() {
         setInterval(() => {
             this.refreshArrivals()
-        }, 30000) // Update every 30 seconds
+        }, 10000) // Update every 30 seconds
     }
 
     refreshArrivals() {

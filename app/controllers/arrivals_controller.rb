@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ArrivalsController < ApplicationController
   def index
     @arrivals = fetch_arrivals

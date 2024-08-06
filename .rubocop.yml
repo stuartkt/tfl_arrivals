@@ -1,0 +1,14 @@
+require:
+  - rubocop-rspec
+  - rubocop-rails
+AllCops:
+  NewCops: enable
+  SuggestExtensions: false
+  Exclude:
+    - 'vendor/**/*'
+    - 'tmp/**/*'
+    - 'bin/**/*'
+Style/Documentation:
+  Enabled: false
+RSpec/MultipleExpectations:
+  Max: 2
