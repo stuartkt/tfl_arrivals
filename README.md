@@ -1,24 +1,31 @@
-# README
+# TFL Arrivals
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Real-time train arrival information for Great Portland Street station, London.
 
-Things you may want to cover:
+## Quick Start
 
-* Ruby version
+### Prerequisites
 
-* System dependencies
+- Ruby (version specified in `.ruby-version`)
+- Rails 7.0.4
+- Node.js and Yarn
 
-* Configuration
+### Setup
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Clone the repository
+   ```sh
+   git clone https://github.com/stuartkt/tfl_arrivals.git
+   cd tfl_arrivals
+2. Install dependencies
+    ```sh
+   bundle install
+   npm install
+3. Start the Rails server
+    ```sh
+   rails s
+4. View the application
+ - Open your browser and navigate to http://localhost:3000
+### Running tests
+Execute the tests with:
+```sh
+rspec spec
