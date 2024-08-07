@@ -12,4 +12,4 @@ en:
         one: 1 Minute
         other: "%{count} minutes"
         zero: Due
-    title: Next Trains at Great Portland Street
+    title: Arrivals at Great Portland Street
