@@ -1,14 +1,14 @@
-#arrivals-table.overflow-x-auto data-arrivals-target="table"
+#arrivals-table.w-100 data-arrivals-target="table"
   - @arrivals.each do |platform, trains|
     h2.text-xl.font-bold.mt-4.mb-2.text-primary
       = t('arrivals.platform', platform: platform)
-    table.table-lg
+    table.table.table-zebra.table-auto
       thead
         tr.text-left.text-accent
           th
           th
             = t('arrivals.table.heading.line')
-          th
+          th.max-md:hidden
             = t('arrivals.table.heading.current_location')
           th
             = t('arrivals.table.heading.destination')
@@ -16,15 +16,15 @@
             = t('arrivals.table.heading.arrival')
       tbody
         - trains.each_with_index do |train, index|
-          tr.hover.text-left
+          tr.text-left
             th
               = index + 1
-            th
+            td.py-4
               = train['lineName']
-            td
+            td.max-md:hidden.py-4
               = train['currentLocation']
-            td
+            td.py-4
               = train['destinationName']
-            td
+            td.py-4
               .text-primary
                 = t('arrivals.table.time_to_station', count: (train['timeToStation'] / 60.0).floor)

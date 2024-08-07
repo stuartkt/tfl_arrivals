@@ -9,7 +9,7 @@ en:
         destination: Destination
         line: Line
       time_to_station:
-        one: 1 Minute
-        other: "%{count} minutes"
+        one: 1 min
+        other: "%{count} mins"
         zero: Due
     title: Arrivals at Great Portland Street
