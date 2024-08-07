@@ -8,7 +8,7 @@ Real-time train arrival information for Great Portland Street station, London.
 
 - Ruby (version specified in `.ruby-version`)
 - Rails 7.0.4
-- Node.js and Yarn
+- Node.js and npm
 
 ### Setup
 
